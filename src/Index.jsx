@@ -11,7 +11,7 @@ export default function Index(){
   const handleSearch = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.get('http://localhost:8000/items/', {
+      const response = await axios.get('http://localhost:8000/cars/', {
         params: { search: query }
       });
       setResults(response.data);
